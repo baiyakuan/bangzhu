@@ -1,0 +1,573 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "帮驻",
+				"disableScroll": false,
+				"navigationStyle": "custom",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},
+		{
+			"path": "pages/index/main",
+			"style": {
+				"navigationBarTitleText": "帮驻",
+				"disableScroll": true,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},
+		{
+			"path": "pages/confirm/scanpay/index",
+			"style": {
+				"navigationBarTitleText": "付款"
+			}
+		},
+		{
+			"path": "pages/confirm/scanpay/success/index",
+			"style": {
+				"navigationBarTitleText": "支付结果"
+			}
+		},
+		{
+			"path": "pages/confirm/bangpinpay/index",
+			"style": {
+				"navigationBarTitleText": "消费详情"
+			}
+		}, {
+			"path": "pages/web_view/web_view",
+			"style": {}
+		}, {
+			"path": "pages/web_view/index",
+			"style": {}
+		}
+	    ,{
+            "path" : "pages/h5_pay/h5_pay",
+            "style" : {
+				"navigationBarTitleText": "支付"
+			}
+        }, {
+			"path": "pages/receiveCoupon/bindCarNumber",
+			"style": {
+				"navigationBarTitleText": "领取停车券",
+				// "navigationStyle": "custom",
+				"disableScroll": true
+			}
+		}, {
+			"path": "pages/receiveCoupon/myCoupon",
+			"style": {
+				"navigationBarTitleText": "我的停车券",
+				// "navigationStyle": "custom",
+				"disableScroll": true
+			}
+		}, {
+			"path": "pages/noPlateCar/in",
+			"style": {
+				"navigationBarTitleText": "无牌车入场",
+				// "navigationStyle": "custom",
+				"disableScroll": true
+			}
+		}, {
+			"path": "pages/noPlateCar/out",
+			"style": {
+				"navigationBarTitleText": "无牌车出场",
+				// "navigationStyle": "custom",
+				"disableScroll": true
+			}
+		}
+    ],
+	"subPackages": [{
+		"root": "basic",
+		"pages": [
+			{
+				"path": "parking/parking",
+				"style": {
+					"navigationBarTitleText": "帮驻",
+					"disableScroll": true,
+					"navigationStyle": "custom",
+					"mp-alipay": {
+						"allowsBounceVertical": "NO"
+					}
+				}
+			},
+			{
+				"path": "parkLotDetail/index",
+				"style": {
+					"navigationBarTitleText": "停车场详情"
+				}
+			},
+			// {
+			// 	"path": "activity/doubleNinth/index"
+			// 		"style": {
+			// 			"navigationBarTitleText": "重阳节活动"
+			// 		}
+			// },
+			{
+				"path": "activity/scangetcoupon/index",
+				"style": {
+					"navigationBarTitleText": "领取停车券"
+				}
+			},
+			{
+				"path": "addOil/addOil",
+				"style": {
+					"navigationBarTitleText": "加油站",
+					"disableScroll": true
+				}
+			},
+			{
+				"path": "addOil/success",
+				"style": {
+					"navigationBarTitleText": "支付成功",
+					"disableScroll": true
+				}
+			}
+		]
+	},{
+		"root": "personal",
+		"pages": [{
+			"path": "index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "bank/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "bank/add/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "giftcard/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "information/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "information/nickname/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "information/phone/index",
+			"style": {
+				"navigationBarTitleText": "用户登录"
+			}
+		}, {
+			"path": "information/auth/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "invoice/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "invoice/add/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "invoice/add/index1",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "invoice/apply/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "setting/index",
+			"style": {
+				"navigationBarTitleText": "法律条款"
+			}
+		}, {
+			"path": "service/index",
+			"style": {
+				"navigationBarTitleText": "客服中心"
+			}
+		}, {
+			"path": "service/parkguide/index",
+			"style": {
+				"navigationBarTitleText": "操作指南"
+			}
+		}, {
+			"path": "service/problem/index",
+			"style": {
+				"navigationBarTitleText": "常见问题"
+			}
+		}, {
+			"path": "service/problem/park/index",
+			"style": {
+				"navigationBarTitleText": "停车问题"
+			}
+		}, {
+			"path": "service/problem/cost/index",
+			"style": {
+				"navigationBarTitleText": "费用问题"
+			}
+		}, {
+			"path": "service/problem/other/index",
+			"style": {
+				"navigationBarTitleText": "其他问题"
+			}
+		}, {
+			"path": "law/index",
+			"style": {
+				"navigationBarTitleText": "用户协议"
+			}
+		}, {
+			"path": "law/rental",
+			"style": {
+				"navigationBarTitleText": "租赁协议"
+			}
+		}, {
+			"path": "law/privacy",
+			"style": {
+				"navigationBarTitleText": "隐私协议"
+			}
+		}, {
+			"path": "wallet/index",
+			"style": {
+				"navigationBarTitleText": "钱包",
+				"navigationBarBackgroundColor": "#f33535",
+				"navigationBarTextStyle": "white",
+				"disableScroll": true
+			}
+		}, {
+			"path": "wallet/recharge/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/withdraw/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/withdrawdetails/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/details/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/bpdetails/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/parkingdetails/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/parkingdetails1/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/addoildetails/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/rechargedetails/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/carrentaldetails/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/coupon/index",
+			"style": {
+				// "enablePullDownRefresh": true,
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/coupon/index1",
+			"style": {
+				// "enablePullDownRefresh": true,
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "wallet/selectCoupon/index",
+			"style": {
+				"navigationBarTitleText": "选择优惠券",
+				"backgroundTextStyle": "dark",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "order/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "order/index2",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "order/allPay/index",
+			"style": {
+				"navigationBarTitleText": "合并支付"
+			}
+		}, {
+			"path": "order/orderDetail/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "order/orderPay/index",
+			"style": {
+				// "navigationBarTitleText": "停车订单"
+			}
+		}, {
+			"path": "order/orderPay/success",
+			"style": {
+				// "navigationBarTitleText": "停车订单"
+			}
+		}, {
+			"path": "order/orderPay/img",
+			"style": {
+				// "navigationBarTitleText": "停车订单"
+			}
+		}, {
+			"path": "member/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "member/doublebb/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "member/percent/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "member/shopingsave/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "member/purchase/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "member/privilege/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "member/pluscoupon/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "member/jointlyVip/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "member/testJointlyVip/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "member/jointlyVip/vipInformation/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#eff4f8"
+			}
+		}, {
+			"path": "carinfo/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "carinfo/add/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "carinfo/noFeelPay/index",
+			"style": {
+				"navigationBarTitleText": "无感支付"
+			}
+		}, {
+			"path": "whiteList/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "carRental/index", // 根据pageStatus判断是租赁还是车辆管理
+			"style": {
+				// "navigationBarTitleText": "车位租赁"
+			}
+		}, {
+			"path": "carRental/filtrate/index",
+			"style": {
+				// "navigationBarTitleText": "筛选"
+			}
+		}, {
+			"path": "carRental/search/index",
+			"style": {
+				// "navigationBarTitleText": "租赁搜索"
+			}
+		}, {
+			"path": "carRental/parkDetail/index",
+			"style": {
+				// "navigationBarTitleText": "租赁车场详情"
+			}
+		}, {
+			"path": "carRental/rentalOrderDetail/index",
+			"style": {
+				// "navigationBarTitleText": "租赁订单详情",
+				"navigationStyle": "custom",
+				"mp-alipay": {
+					"transparentTitle": "always",
+					"titlePenetrate": "YES"
+				}
+			}
+		}, {
+			"path": "carRental/orderDetail/index",
+			"style": {
+				// "navigationBarTitleText": "租赁订单详情"
+			}
+		}, {
+			"path": "carRental/rentList/index",
+			"style": {
+				// "navigationBarTitleText": "租赁订单列表"
+			}
+		}, {
+			"path": "carRental/rentList2/index",
+			"style": {
+				// "navigationBarTitleText": "租赁订单列表"
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "invoicing/index",
+			"style": {
+				"navigationBarTitleText": "开具发票"
+			}
+		}, {
+			"path": "invoicing/help/index",
+			"style": {
+				"navigationBarTitleText": "开票帮助"
+			}
+		}, {
+			"path": "invoicing/history/index",
+			"style": {
+				"navigationBarTitleText": "开票历史"
+			}
+		}, {
+			"path": "invoicing/history/detail/index",
+			"style": {
+				"navigationBarTitleText": "发票详情"
+			}
+		}, {
+			"path": "invoicing/history/detail/orderList/index",
+			"style": {
+				"navigationBarTitleText": "包含订单"
+			}
+		}, {
+			"path": "invoicing/headManage/index",
+			"style": {
+				"navigationBarTitleText": "抬头管理"
+			}
+		}, {
+			"path": "invoicing/headManage/index1",
+			"style": {
+				"navigationBarTitleText": "抬头管理"
+			}
+		}, {
+			"path": "invoicing/headManage/add/index",
+			"style": {
+				"navigationBarTitleText": "新增抬头"
+			}
+		}, {
+			"path": "invoicing/order/index",
+			"style": {
+				"navigationBarTitleText": "开票订单"
+			}
+		}, {
+			"path": "invoicing/order/apply/index",
+			"style": {
+				"navigationBarTitleText": "发票详情"
+			}
+		}]
+	}],
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["personal"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#fff",
+		// "backgroundColor": "#fff"
+		"backgroundColor": "#F6F8FB"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
